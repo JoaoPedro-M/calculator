@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --primaria: rgb(253, 181, 181);
+    --escuro: rgb(109, 109, 109);
+
+    --fonte: "Fredoka", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primaria);
+    font-family: var(--fonte);
+    
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background-color: var(--escuro);
+    padding: 32px;
+    padding-top: 0;
+    border-radius: 32px;
+}
+
+.resultado {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    font-size: 1.4em;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+span#res {
+    font-size: 2em;
+}
+
+button {
+    padding: 16px;
+    font-size: 2em;
+    margin: 0.5px;
+    outline: none;
+    cursor: pointer;
+    transition: 50ms;
+}
+
+button:active {
+    background-color: rgb(218, 218, 218);
+    border: none;
+}
+
+.numeros, .comandos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comandos > button {
+    flex-grow: 1;
+}
+
+.numeros > button {
+    flex-grow: 1;
+    flex-basis: 30%;
+}
