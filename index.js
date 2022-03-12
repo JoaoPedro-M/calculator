@@ -38,6 +38,11 @@ function adiciona_operador(operador) {
     }
 }
 
+function deleta() {
+    res.innerHTML = "0";
+    restxt.innerHTML = "Conta:";
+}
+
 
 function adiciona_ponto() {
     let pode_adicionar = true;
@@ -90,6 +95,11 @@ window.addEventListener("load", (e) => {
     let btigual = document.getElementById("btigual");
     btigual.addEventListener("click", (event) => {
         igual();
+    })
+
+    let btdel = document.getElementById("btdel");
+    btdel.addEventListener("click", (event) => {
+        deleta();
     })
 }) 
 
