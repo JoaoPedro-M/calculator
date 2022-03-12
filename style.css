@@ -89,6 +89,7 @@ button:active {
     }
     main {
         width: 85vw;
-        
+        padding: 16px;
+        padding-top: 0;
     }
 }
