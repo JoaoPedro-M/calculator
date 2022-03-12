@@ -35,6 +35,7 @@ main {
     padding: 32px;
     padding-top: 0;
     border-radius: 32px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.411);
 }
 
 .resultado {
@@ -47,6 +48,7 @@ main {
 h1 {
     text-align: center;
     font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.096);
 }
 
 span#res {
@@ -83,7 +85,7 @@ button:active {
 
 @media (max-width: 720px) {
     body {
-        font-size: 2.5vw;
+        font-size: 2.2vw;
     }
     main {
         width: 85vw;
